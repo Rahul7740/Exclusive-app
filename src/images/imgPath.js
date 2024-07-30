@@ -5,7 +5,7 @@ const ImgPath = {
     ShopIcon : require("../images/icons/shop-icon.svg").default,
 
 }
-
+console.log(ImgPath);
 
 
 export default ImgPath;

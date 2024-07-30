@@ -1,8 +1,8 @@
 import "../style/header.css";
 import ImgPath from "../images/imgPath";
 
-function Header1() {
-  
+function Header() {
+
   console.log(ImgPath);
 
   return (
@@ -25,22 +25,23 @@ function Header1() {
                 <a className="nav-link" href="#">Sign Up</a>
               </li>
             </ul>
-            
+
             <div className="header-icons-container">
-                <div className="search-conatiner">
-                    <input type="text" className="search-input" placeholder="What are you looking for?" />
-                    <button className="search-btn"><img src={ImgPath.serachIcon} alt="search" /></button>
-                </div>
-                <div className="shop-icon-container">
-                    <button><img src={ImgPath.Heart} /></button>
-                    <button><img src={require("../images/icons/shop-icon.svg").default} /></button>
-                </div>
+              <div className="search-conatiner">
+                <input type="text" className="search-input" placeholder="What are you looking for?" />
+                <button className="search-btn"><img src={ImgPath.serachIcon} alt="search" /></button>
+              </div>
+              <div className="shop-icon-container">
+                <button><img src={ImgPath.Heart} /></button>
+                <button><img src={require("../images/icons/shop-icon.svg").default} /></button>
+              </div>
             </div>
           </div>
         </div>
       </header>
+      
     </>
   );
 }
 
-export default Header1;
+export default Header;

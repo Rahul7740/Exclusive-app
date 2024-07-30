@@ -52,3 +52,29 @@ input {
 body{
   font-family: "Inter", sans-serif;
 }
+.all-Headings{
+  font-size: 36px;
+  font-weight: 700px;
+}
+
+.sections-name{
+  color: #DB4444;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  text-indent: 30px;
+}
+.sections-name::before{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: " ";
+  width: 20px;
+  height: 40px;
+  background-color: #DB4444;
+  border-radius: 4px;
+}
+.all-section{
+  margin: 70px 0;
+}
