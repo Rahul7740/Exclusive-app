@@ -1,0 +1,49 @@
+.header-section{
+  border-bottom: 2px solid #B3B3B3;
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: 47px 0 23px 0;
+}
+.main-logo{
+  font-size: 24px;
+  font-weight: 900;
+}
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+    font-size: 16px;
+  }
+  
+  .nav-item {
+    list-style: none;
+  }
+  
+  .nav-link {
+    color: #070707; 
+  }
+  .header-icons-container{
+    justify-self: self-end;
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+  }
+.search-conatiner{
+    display: inline-flex;
+    background-color: #F5F5F5;
+    padding: 7px 12px;
+    gap: 30px;
+    border-radius: 4px;
+}
+.search-input{
+  font-size: 12px;
+}
+.shop-icon-container{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
