@@ -11,7 +11,7 @@ const ProductCard = (props) => {
           <img className="card-like-btn" src={SvgPath.heartWhiteBG} />
           <img className="card-eye-btn" src={SvgPath.eyeWithBG} />
         </div>
-        {props.showPOFF ? (
+        {props.percentOFF ? (
             <p className="card-percentOFF">{props.percentOFF}</p>
           ) : (
             ""

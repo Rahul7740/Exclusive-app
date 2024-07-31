@@ -31,7 +31,6 @@ const Product = (props) => {
       price: "$960",
       rate: "75",
       percentOFF:"35%",
-      showPOFF:true,
 
     },
     {
@@ -107,7 +106,6 @@ const Product = (props) => {
                   price={i.price}
                   rate={i.rate}
                   percentOFF={i.percentOFF}
-                  showPOFF={i.showPOFF}
                 />
               </SwiperSlide>
             ))}
