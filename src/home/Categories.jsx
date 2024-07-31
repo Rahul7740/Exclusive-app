@@ -1,28 +1,33 @@
-import "./Categories.css";
 
-import CategoriesImg from "./images/CategoriesImg";
+import ImgPath from "../assets/images/ImgPath";
+import SvgPath from "../assets/svg/SvgPath";
+import "../style/Categories.css";
 
 const categories = [
-  { name: "Phones", icon: CategoriesImg.phone },
-  { name: "Computers", icon: CategoriesImg.computer },
-  { name: "SmartWatch", icon: CategoriesImg.smartWatch },
-  { name: "Camera", icon: CategoriesImg.camera, selected: true },
-  { name: "HeadPhones", icon: CategoriesImg.headPhone },
-  { name: "Gaming", icon: CategoriesImg.gamePad },
+  { name: "Phones", icon: SvgPath.phone },
+  { name: "Computers", icon: SvgPath.computer },
+  { name: "SmartWatch", icon: SvgPath.smartWatch },
+  { name: "Camera", icon: SvgPath.camera },
+  { name: "HeadPhones", icon: SvgPath.headPhone },
+  { name: "Gaming", icon: SvgPath.gamePad },
 ];
 
 
-function Categories() {
+function Categories(props) {
   return (
     <section className="all-section">
+      
       <div className="container">
-        <div className="sections-name">Categories</div>
+      <div className="overview-head">
+            <div className="red-rec"></div>
+            <h3 className="overview-h3">{props.title}</h3>
+          </div>
         <div className="category-browse">
           <div className="flex-spaceBetween section-title">
-            <h2>Browse By Category</h2>
+          <h1 className="overview-h1">{props.head}</h1>
             <div className="heading-arrows">
-                <img src={CategoriesImg.leftArrow}/>
-                <img src={CategoriesImg.rightArrow}/>
+                <img src={SvgPath.leftArrowWithBG}/>
+                <img src={SvgPath.rightArrowWithBG}/>
             </div>
           </div>
           <div className="categories">

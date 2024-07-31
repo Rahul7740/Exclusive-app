@@ -1,9 +1,10 @@
+
 import "../style/header.css";
-import ImgPath from "../images/imgPath";
+import SvgPath from "../assets/svg/SvgPath";
+import { Link } from "react-router-dom";
+
 
 function Header() {
-
-  console.log(ImgPath);
 
   return (
     <>
@@ -16,24 +17,24 @@ function Header() {
                 <a className="nav-link " href="#"> Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Contact</a>
+              <Link  className="nav-link" to={"/Contact"}>Contact</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link " href="#"> About</a>
+                <Link  className="nav-link" to={"/Aboutus"}>About</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Sign Up</a>
+                <Link  className="nav-link" to={"/Signup"}>Sign up</Link>
               </li>
             </ul>
 
             <div className="header-icons-container">
               <div className="search-conatiner">
                 <input type="text" className="search-input" placeholder="What are you looking for?" />
-                <button className="search-btn"><img src={ImgPath.serachIcon} alt="search" /></button>
+                <button className="search-btn"><img src={SvgPath.searchIcon} alt="search" /></button>
               </div>
               <div className="shop-icon-container">
-                <button><img src={ImgPath.Heart} /></button>
-                <button><img src={require("../images/icons/shop-icon.svg").default} /></button>
+                <button><img src={SvgPath.heart} /></button>
+                <button><img src={SvgPath.shopIcon} /></button>
               </div>
             </div>
           </div>

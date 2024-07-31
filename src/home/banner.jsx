@@ -1,5 +1,10 @@
-import "./banner.css";
-import IamgesPath from "./images/IamgesPath";
+import { Link } from "react-router-dom";
+import "../style/banner.css";
+import ImgPath from "../assets/images/ImgPath";
+import SvgPath from "../assets/svg/SvgPath";
+
+
+
 function Banner() {
   return (
     <>
@@ -10,11 +15,11 @@ function Banner() {
               <ul>
                 <li className="flex-spaceBetween">
                   <a href="#">Woman's Fashion</a>
-                  <img src={IamgesPath.rightArrow} alt="right-arrow" />
+                  <img src={SvgPath.rightArrow} alt="right-arrow" />
                 </li>
                 <li className="flex-spaceBetween">
                   <a href="#">Men's Fashion</a>
-                  <img src={IamgesPath.rightArrow} alt="right-arrow" />
+                  <img src={SvgPath.rightArrow} alt="right-arrow" />
                 </li>
                 <li>
                   <a href="#">Electronics</a>
@@ -42,12 +47,12 @@ function Banner() {
             <div className="banner">
               <div className="banner-content">
                 <div className="apple-logo-container">
-                  <img src={IamgesPath.appleLogo} alt="" />
+                  <img src={SvgPath.appleLogo} alt="" />
                   <p>iPhone 14 Series</p>
                 </div>
                 <h1>Up to 10% off Voucher</h1>
                 <a href="#" className="shop-button">
-                  <p>Shop Now</p> <img src={IamgesPath.rightBtnArrow} />
+                  <p>Shop Now</p> <img src={SvgPath.rightBtnArrow} />
                 </a>
               </div>
               <div className="carousel-indicators">
@@ -56,7 +61,7 @@ function Banner() {
                 <span className="indicator"></span>
                 <span className="indicator"></span>
               </div>
-              <img src={IamgesPath.iphoneBanner} />
+              <img src={ImgPath.iphoneBanner} />
             </div>
           </div>
         </div>
