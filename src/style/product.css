@@ -18,6 +18,7 @@
 .overview-main{
     display: flex;
     justify-content: space-between;
+    margin: 10px 0 40px;
 }
 .overview-head{
     display: flex;
@@ -63,9 +64,6 @@
     display: none;
 }
 
-.mySwiper{
-    margin: 40px 0;
-}
 
 .card-rating{
     display: flex;

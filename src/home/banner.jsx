@@ -3,7 +3,17 @@ import "../style/banner.css";
 import ImgPath from "../assets/images/ImgPath";
 import SvgPath from "../assets/svg/SvgPath";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import BannerDesign from "../snippets/BannerDesign";
 
 function Banner() {
   return (
@@ -14,55 +24,66 @@ function Banner() {
             <nav className="sidebar">
               <ul>
                 <li className="flex-spaceBetween">
-                  <a href="#">Woman's Fashion</a>
+                  <a className="sliderbar-links" href="#">Woman's Fashion</a>
                   <img src={SvgPath.rightArrow} alt="right-arrow" />
                 </li>
                 <li className="flex-spaceBetween">
-                  <a href="#">Men's Fashion</a>
+                  <a className="sliderbar-links" href="#">Men's Fashion</a>
                   <img src={SvgPath.rightArrow} alt="right-arrow" />
                 </li>
                 <li>
-                  <a href="#">Electronics</a>
+                  <a className="sliderbar-links" href="#">Electronics</a>
                 </li>
                 <li>
-                  <a href="#">Home & Lifestyle</a>
+                  <a className="sliderbar-links" href="#">Home & Lifestyle</a>
                 </li>
                 <li>
-                  <a href="#">Medicine</a>
+                  <a className="sliderbar-links" href="#">Medicine</a>
                 </li>
                 <li>
-                  <a href="#">Sports & Outdoor</a>
+                  <a className="sliderbar-links" href="#">Sports & Outdoor</a>
                 </li>
                 <li>
-                  <a href="#">Baby's & Toys</a>
+                  <a className="sliderbar-links" href="#">Baby's & Toys</a>
                 </li>
                 <li>
-                  <a href="#">Groceries & Pets</a>
+                  <a className="sliderbar-links" href="#">Groceries & Pets</a>
                 </li>
                 <li>
-                  <a href="#">Health & Beauty</a>
+                  <a className="sliderbar-links" href="#">Health & Beauty</a>
                 </li>
               </ul>
             </nav>
-            <div className="banner">
-              <div className="banner-content">
-                <div className="apple-logo-container">
-                  <img src={SvgPath.appleLogo} alt="" />
-                  <p>iPhone 14 Series</p>
-                </div>
-                <h1>Up to 10% off Voucher</h1>
-                <a href="#" className="shop-button">
-                  <p>Shop Now</p> <img src={SvgPath.rightBtnArrow} />
-                </a>
-              </div>
-              <div className="carousel-indicators">
-                <span className="indicator active"></span>
-                <span className="indicator"></span>
-                <span className="indicator"></span>
-                <span className="indicator"></span>
-              </div>
-              <img src={ImgPath.iphoneBanner} />
-            </div>
+            <Swiper
+              spaceBetween={30}
+              centeredSlides={true}
+              autoplay={{
+                delay: 1900,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={false}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <BannerDesign name="iPhone 14 Series"  img={ImgPath.iphoneBanner} oFFpercent="15%"/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <BannerDesign name="iPhone 13 Series" img={ImgPath.iphone13} oFFpercent="12%" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <BannerDesign name="iPhone 12 Series" img={ImgPath.iphone12} oFFpercent="19%"/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <BannerDesign name="iPhone 11 Series" img={ImgPath.iphone11} oFFpercent="30%"/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <BannerDesign name="iPhone 10 Series" img={ImgPath.iphone10} oFFpercent="10%"/>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </section>
