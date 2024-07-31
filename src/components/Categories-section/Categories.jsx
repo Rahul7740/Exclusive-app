@@ -11,6 +11,7 @@ const categories = [
   { name: "Gaming", icon: CategoriesImg.gamePad },
 ];
 
+
 function Categories() {
   return (
     <section className="all-section">
