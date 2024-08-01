@@ -10,7 +10,6 @@ import ProductPromotion from "../home/ProductPromotion-section";
 const Home = () => {
   return (
     <>
-      <Header />
       <Banner />
       <Project title="Today’s" head="Flash Sales"/>
       <Categories title="Categories" head="Browse By Category"/>

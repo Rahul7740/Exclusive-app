@@ -11,10 +11,10 @@ function Header() {
       <header className="header-section">
         <div className="container">
           <div className="header">
-            <h1 className="main-logo">Exclusive</h1>
+            <Link  className="main-logo" to={"/"}>Exclusive</Link>
             <ul className="navbar-nav ">
               <li className="nav-item">
-                <a className="nav-link " href="#"> Home</a>
+              <Link  className="nav-link" to={"/"}>Home</Link>
               </li>
               <li className="nav-item">
               <Link  className="nav-link" to={"/Contact"}>Contact</Link>

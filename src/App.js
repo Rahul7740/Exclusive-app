@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 import Aboutus from "./pages/Aboutus";
 import Contact from "./pages/Contact";
+import Header from "./common/Header";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Categories title="Categories" head="Browse By Category"/> */}
 
       <BrowserRouter>
+          <Header /> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Aboutus" element={<Aboutus />} />
