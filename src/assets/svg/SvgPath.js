@@ -23,7 +23,11 @@ const SvgPath = {
     emptyStars : require("./emptyStars.svg").default,
     heartWhiteBG : require("./heart-withWhiteBG.svg").default,
     eyeWithBG : require("./eye-withWhiteBG.svg").default,
-    // camera : require(".").default,
+    
+    
+    services1 : require("./Services1.svg").default,
+    services2 : require("./Services2.svg").default,
+    services3 : require("./Services3.svg").default,
     // camera : require(".").default,
     // camera : require(".").default,
 }

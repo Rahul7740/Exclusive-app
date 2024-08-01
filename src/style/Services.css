@@ -1,0 +1,22 @@
+.services-main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 943px;
+    width: 100%;
+    margin: 0 auto;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.services h2{
+    font-size: 20px;
+}
+.services p{
+    font-size: 14px;
+}
