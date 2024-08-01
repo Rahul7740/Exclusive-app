@@ -5,7 +5,7 @@ import Banner from "../home/banner";
 import Project from "../home/Product";
 import Categories from "../home/Categories";
 import ProductPromotion from "../home/ProductPromotion-section";
-import ThisMothProducts from "../home/ThisMothProducts";
+import ThisMothProducts from "../home/thisMothProducts";
 import OurProducts from "../home/OurProducts";
 import Featured from "../home/Featured";
 import Services from "../home/Services";
