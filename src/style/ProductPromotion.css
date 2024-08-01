@@ -1,0 +1,28 @@
+
+
+.product-promotion-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px ;
+    background-color: black;
+}
+.promotion-content{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: start;
+}
+.color-green{
+    color: #00FF66;
+}
+.color-white-48px{
+    font-size: 48px;
+    color: white;
+}
+.promtion-img{
+    padding: 45px 16px;
+    filter: drop-shadow(0 0 100px #ffffff57);
+    max-width: 550px;
+    width: 100%;
+}

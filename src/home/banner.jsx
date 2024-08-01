@@ -14,6 +14,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import BannerDesign from "../snippets/BannerDesign";
+import Button from "../snippets/butttons/button";
 
 function Banner() {
   return (
@@ -69,7 +70,7 @@ function Banner() {
               className="mySwiper"
             >
               <SwiperSlide>
-                <BannerDesign name="iPhone 14 Series"  img={ImgPath.iphoneBanner} oFFpercent="15%"/>
+                <BannerDesign name="iPhone 14 Series"  img={ImgPath.iphone14} oFFpercent="15%"/>
               </SwiperSlide>
               <SwiperSlide>
                 <BannerDesign name="iPhone 13 Series" img={ImgPath.iphone13} oFFpercent="12%" />

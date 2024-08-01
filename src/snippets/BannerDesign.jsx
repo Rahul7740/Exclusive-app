@@ -8,7 +8,7 @@ function BannerDesign(props) {
           <img src={SvgPath.appleLogo} alt="" />
           <p>{props.name}</p>
         </div>
-        <h1>Up to {props.oFFpercent} off Voucher</h1>
+        <h1 className="color-white-48px">Up to {props.oFFpercent} off Voucher</h1>
         <a href="#" className="shop-button">
           <p>Shop Now</p> <img src={SvgPath.rightBtnArrowWhite} />
         </a>
