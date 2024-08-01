@@ -35,5 +35,9 @@ const ImgPath = {
     featuredImg2: require('./featured-img-2.png'),
     featuredImg3: require('./featured-img-3.png'),
     featuredImg4: require('./featured-img-4.png'),
+
+    qrcode: require('./Qrcode-1.png'),
+    playstore : require('./playstore-btn.png'),
+    appstore : require('./appStore-btn.png'),
 }
 export default ImgPath

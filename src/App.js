@@ -5,6 +5,7 @@ import Signup from "./pages/Signup";
 import Aboutus from "./pages/Aboutus";
 import Contact from "./pages/Contact";
 import Header from "./common/Header";
+import Footer from "./common/Footer";
 
 function App() {
   return (
@@ -15,13 +16,14 @@ function App() {
       <Categories title="Categories" head="Browse By Category"/> */}
 
       <BrowserRouter>
-          <Header /> 
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Aboutus" element={<Aboutus />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
