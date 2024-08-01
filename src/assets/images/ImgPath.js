@@ -30,5 +30,10 @@ const ImgPath = {
     ourProduct6: require('./our-project-6.png'),
     ourProduct7: require('./our-project-7.png'),
     ourProduct8: require('./our-project-8.png'),
+
+    featuredImg1: require('./featured-img-1.png'),
+    featuredImg2: require('./featured-img-2.png'),
+    featuredImg3: require('./featured-img-3.png'),
+    featuredImg4: require('./featured-img-4.png'),
 }
 export default ImgPath

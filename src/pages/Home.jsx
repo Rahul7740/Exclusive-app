@@ -7,6 +7,7 @@ import Categories from "../home/Categories";
 import ProductPromotion from "../home/ProductPromotion-section";
 import ThisMothProducts from "../home/ThisMothProducts";
 import OurProducts from "../home/OurProducts";
+import Featured from "../home/Featured";
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <ThisMothProducts  title="This Month" head="Best Selling Products" />
       <ProductPromotion />
       <OurProducts title="Our Products" head="Explore Our Products"/>
+      <Featured />
     </>
   );
 };
