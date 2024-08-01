@@ -14,6 +14,7 @@ const SvgPath = {
     
     leftArrowWithBG: require("./Fill-With-Left-Arrow.svg").default,
     rightArrowWithBG: require("./Fill-with-Right-Arrow.svg").default,
+    upArrowWithBG: require('./Up-Arrow-bg.svg').default,
     
     appleLogo : require("./apple-logo.svg").default,
     leftArrowSvg : require("./left-arrow-svg.svg").default,
@@ -40,6 +41,12 @@ const SvgPath = {
 
     phoneBG: require('./phone-Bg.svg').default,
     mailBG: require('./mail-Bg.svg').default,
+
+    statServices1: require('./stat-1-Services.svg').default,
+    statServices2: require('./stat-2-Services.svg').default,
+    statServices3: require('./stat-3-Services.svg').default,
+    statServices4: require('./stat-4-Services.svg').default,
+
 }
 
 export default SvgPath

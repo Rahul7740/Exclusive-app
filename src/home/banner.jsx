@@ -21,7 +21,7 @@ function Banner() {
     <>
       <section className="sectionConatiner">
         <div className="container">
-          <div className="sliderbar-AND-banner-DIV ">
+          <div  className="sliderbar-AND-banner-DIV ">
             <nav className="sidebar">
               <ul>
                 <li className="flex-spaceBetween">
@@ -88,7 +88,7 @@ function Banner() {
           </div>
         </div>
       </section>
-      <button className=""></button>
+      <a className="upArrow" href="#upScroll"><img src={SvgPath.upArrowWithBG} /></a>
     </>
   );
 }

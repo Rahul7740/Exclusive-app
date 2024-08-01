@@ -1,0 +1,57 @@
+.ourStory-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 75px;
+}
+.ourStory-container img{
+    margin-right: -135px;
+}
+.ourstory{
+    max-width: 525px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+}
+.ourstory h1{
+    font-size: 54px;
+    margin-bottom: 16px;
+}
+.ourstory p{
+    font-size: 16px;
+}
+
+/* sevicess section css  */
+
+.stats-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 140px 0;
+}
+.stat-services{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #B3B3B3;
+    border-radius: 4px;
+    gap: 15px;
+    max-width: 270px;
+    width: 100%;
+}
+.stats-container .active{
+    background-color: #DB4444 ;
+    color: white;
+    border: none;
+}
+.stat-services h3{
+    font-size: 32px;
+}
+.stat-services p {
+    font-size: 16px;
+}

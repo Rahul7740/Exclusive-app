@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <>
-      <header className="header-section">
+      <header id="upScroll" className="header-section">
         <div className="container">
           <div className="header">
             <NavLink  className="main-logo" to={"/"}>Exclusive</NavLink>

@@ -39,5 +39,7 @@ const ImgPath = {
     qrcode: require('./Qrcode-1.png'),
     playstore : require('./playstore-btn.png'),
     appstore : require('./appStore-btn.png'),
+
+    ourStory: require('./about-ourStory-Img.png'),
 }
 export default ImgPath
