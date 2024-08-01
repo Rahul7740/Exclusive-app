@@ -1,3 +1,5 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import "../style/header.css";
 import SvgPath from "../assets/svg/SvgPath";
@@ -11,19 +13,19 @@ function Header() {
       <header className="header-section">
         <div className="container">
           <div className="header">
-            <Link  className="main-logo" to={"/"}>Exclusive</Link>
+            <NavLink  className="main-logo" to={"/"}>Exclusive</NavLink>
             <ul className="navbar-nav ">
               <li className="nav-item">
-              <Link  className="nav-link" to={"/"}>Home</Link>
+              <NavLink  className="nav-link"activeClassName="active" to={"/"}>Home</NavLink>
               </li>
               <li className="nav-item">
-              <Link  className="nav-link" to={"/Contact"}>Contact</Link>
+              <NavLink  className="nav-link" activeClassName="active" to={"/Contact"}>Contact</NavLink>
               </li>
               <li className="nav-item">
-                <Link  className="nav-link" to={"/Aboutus"}>About</Link>
+                <NavLink  className="nav-link" activeClassName="active" to={"/Aboutus"}>About</NavLink>
               </li>
               <li className="nav-item">
-                <Link  className="nav-link" to={"/Signup"}>Sign up</Link>
+                <NavLink  className="nav-link" activeClassName="active" to={"/Signup"}>Sign up</NavLink>
               </li>
             </ul>
 

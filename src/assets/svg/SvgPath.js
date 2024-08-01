@@ -28,8 +28,18 @@ const SvgPath = {
     services1 : require("./Services1.svg").default,
     services2 : require("./Services2.svg").default,
     services3 : require("./Services3.svg").default,
-    // camera : require(".").default,
-    // camera : require(".").default,
+    
+    facebook : require("./facebook.svg").default,
+    twitter : require("./Twitter.svg").default,
+    instagram : require("./instagram.svg").default,
+    linkedin : require("./Linkedin.svg").default,
+
+    sendIconWhite : require("./send-icon-white.svg").default,
+
+    C: require('./C.svg').default,
+
+    phoneBG: require('./phone-Bg.svg').default,
+    mailBG: require('./mail-Bg.svg').default,
 }
 
 export default SvgPath
