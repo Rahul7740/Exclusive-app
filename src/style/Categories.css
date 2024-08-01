@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.categories-main-container{
+  border-top: 1px solid #B3B3B3;
+  border-bottom: 1px solid #B3B3B3;
+  padding: 70px 0;
+}
 .categories {
   display: flex;
   justify-content: space-between;

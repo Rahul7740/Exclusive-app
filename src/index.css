@@ -69,3 +69,9 @@ body{
   display: inline-block;
   border-radius: 4px;
 }
+.viewAllBtn{
+  margin-top: 70px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -11,11 +11,12 @@ const ProductCard = (props) => {
           <img className="card-like-btn" src={SvgPath.heartWhiteBG} />
           <img className="card-eye-btn" src={SvgPath.eyeWithBG} />
         </div>
-        {props.percentOFF ? (
-            <p className="card-percentOFF">{props.percentOFF}</p>
-          ) : (
-            ""
-          )}
+        {props.percentOFF < 1000 ? (
+            <p  className="card-percentOFF ">{props.percentOFF}%</p>
+          ) : 
+            props.percentOFF == "NEW" ? <p  className="card-percentOFF card-percentNew">{props.percentOFF}</p> : ""
+
+           }
       </div>
       <div className="card-info">
         <h4 className="card-head">{props.head}</h4>

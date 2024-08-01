@@ -1,12 +1,4 @@
 import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-import { Pagination, Navigation } from "swiper/modules";
 
 import "../style/product.css";
 import ProductCard from "../snippets/product-card/product-card";
@@ -14,54 +6,63 @@ import ImgPath from "../assets/images/ImgPath";
 import SvgPath from "../assets/svg/SvgPath";
 import Button from "../snippets/butttons/button";
 
-const Product = (props) => {
+const OurProducts = (props) => {
   const swiperRef = useRef(null);
 
   const array = [
     {
-      image: ImgPath.product1,
-      head: "HAVIT HV-G92 Gamepad",
-      price: "$120",
+      image: ImgPath.ourProduct1,
+      head: "Breed Dry Dog Food",
+      price: "$99",
       rate: "88",
-      percentOFF: 40,
     },
     {
-      image: ImgPath.product2,
-      head: "AK-900 Wired Keyboard",
-      price: "$960",
+      image: ImgPath.ourProduct2,
+      head: "CANON EOS DSLR Camera",
+      price: "$1599",
       rate: "75",
-      percentOFF: 35,
+
     },
     {
-      image: ImgPath.product3,
-      head: "IPS LCD Gaming Monitor",
-      price: "$370",
-      rate: "99",
-      percentOFF: 40,
-    },
-    {
-      image: ImgPath.product4,
-      head: "S-Series Comfort Chair ",
-      price: "$375",
-      rate: "74",
-      percentOFF: 50,
-    },
-    {
-      image: ImgPath.product5,
-      head: "RGB liquid CPU Cooler",
-      price: "$375",
-      rate: "88",
-      percentOFF: 60,
-    },
-    {
-      image: ImgPath.product6,
+      image: ImgPath.ourProduct3,
       head: "ASUS FHD Gaming Laptop",
-      price: "$375",
-      rate: "88",
-      percentOFF: 15,
+      price: "$2599",
+      rate: "99",
     },
+    {
+      image: ImgPath.ourProduct4,
+      head: "Curology Product Set  ",
+      price: "$500",
+      rate: "74",
+    },
+    {
+      image: ImgPath.ourProduct5,
+      head: "Kids Electric Car",
+      price: "$960",
+      rate: "88",
+      percentOFF:"NEW",
+    },
+    {
+      image: ImgPath.ourProduct6,
+      head: "Jr. Zoom Soccer Cleats",
+      price: "$1160",
+      rate: "75",
+    },
+    {
+      image: ImgPath.ourProduct7,
+      head: "GP11 Shooter USB Gamepad",
+      price: "$770",
+      rate: "55",
+      percentOFF:"NEW",
+    },
+    {
+      image: ImgPath.ourProduct8,
+      head: "Quilted Satin Jacket ",
+      price: "$660",
+      rate: "60",
+    },
+    
   ];
-  
 
   return (
     <section className="all-section">
@@ -77,25 +78,17 @@ const Product = (props) => {
             </div>
             <div></div>
             <div className="overview-btns">
-              <button onClick={() => swiperRef.current.swiper.slidePrev()}>
+            <button>
                 <img src={SvgPath.leftArrowWithBG} alt="Previous" />
               </button>
-              <button onClick={() => swiperRef.current.swiper.slideNext()}>
+              <button>
                 <img src={SvgPath.rightArrowWithBG} alt="Next" />
               </button>
             </div>
           </div>
 
-          <Swiper
-            ref={swiperRef}
-            pagination={false}
-            navigation={false} // Disable default navigation
-            modules={[Pagination, Navigation]}
-            className="mySwiper"
-            slidesPerView={4}
-          >
+          <div className="products">
             {array.map((i, index) => (
-              <SwiperSlide key={index}>
                 <ProductCard
                   image={i.image}
                   head={i.head}
@@ -103,17 +96,16 @@ const Product = (props) => {
                   rate={i.rate}
                   percentOFF={i.percentOFF}
                 />
-              </SwiperSlide>
             ))}
-          </Swiper>
+          </div>
+          
         </div>
         <div className="viewAllBtn" >
           <Button name="View All Products" bgColor="#DB4444" />
         </div>
-        
       </div>
     </section>
   );
 };
 
-export default Product;
+export default OurProducts;

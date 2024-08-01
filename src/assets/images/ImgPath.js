@@ -1,3 +1,4 @@
+
 const ImgPath = {
     iphone14 : require('./iphone-banner.png'),
     iphone13 : require('./iphone13.png'),
@@ -15,5 +16,19 @@ const ImgPath = {
 
     timer: require('./promotion-setion-timer.png'),
     bluetoothSpeaker:require('./bluetooth-speaker.png'),
+
+    thismonth1: require('./this-month-1.png'),
+    thismonth2: require('./this-month-2.png'),
+    thismonth3: require('./this-month-3.png'),
+    thismonth4: require('./this-month-4.png'),
+
+    ourProduct1: require('./our-project-1.png'),
+    ourProduct2: require('./our-project-2.png'),
+    ourProduct3: require('./our-project-3.png'),
+    ourProduct4: require('./our-project-4.png'),
+    ourProduct5: require('./our-project-5.png'),
+    ourProduct6: require('./our-project-6.png'),
+    ourProduct7: require('./our-project-7.png'),
+    ourProduct8: require('./our-project-8.png'),
 }
 export default ImgPath
