@@ -35,6 +35,11 @@ const SvgPath = {
     instagram : require("./instagram.svg").default,
     linkedin : require("./Linkedin.svg").default,
 
+    twitterWhite : require("./Twitter-black.svg").default,
+    instagramWhite : require("./instagram-black.svg").default,
+    linkedinWhite : require("./Linkedin-black.svg").default,
+
+
     sendIconWhite : require("./send-icon-white.svg").default,
 
     C: require('./C.svg').default,
@@ -47,6 +52,7 @@ const SvgPath = {
     statServices3: require('./stat-3-Services.svg').default,
     statServices4: require('./stat-4-Services.svg').default,
 
+    googleIcon : require('./Google-Icon.svg').default,
 }
 
 export default SvgPath

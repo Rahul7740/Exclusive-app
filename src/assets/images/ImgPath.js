@@ -41,5 +41,11 @@ const ImgPath = {
     appstore : require('./appStore-btn.png'),
 
     ourStory: require('./about-ourStory-Img.png'),
+
+    aboutMamber1 : require('./about-member-1.png'),
+    aboutMamber2 : require('./about-member-2.png'),
+    aboutMamber3 : require('./about-member-3.png'),
+
+    signUp : require('./sign-up-img.png'),
 }
 export default ImgPath

@@ -3,6 +3,16 @@ import { Link } from "react-router-dom";
 import ImgPath from "../assets/images/ImgPath";
 import "../style/about.css";
 import SvgPath from "../assets/svg/SvgPath";
+import Services from "../home/Services"
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+// import required modules
+import { Pagination } from "swiper/modules";
 
 const Aboutus = () => {
   return (
@@ -56,6 +66,80 @@ const Aboutus = () => {
           </div>
         </div>
       </section>
+      <section className="all-section">
+        <div className="container">
+          <Swiper
+            pagination={{
+              dynamicBullets: true,
+            }}
+            modules={[Pagination]}
+            className="members-swiper"
+            slidesPerView={3}
+            spaceBetween={30}
+          >
+            <SwiperSlide>
+              <div className="member">
+                  <img src={ImgPath.aboutMamber1} />
+                  <h3>Tom Cruise</h3>
+                  <p>Founder & Chairman</p>
+                  <div className="member-social-media-links">
+                    <img src={SvgPath.twitterWhite} />
+                    <img src={SvgPath.instagramWhite} />
+                    <img src={SvgPath.linkedinWhite} />
+                  </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+            <div className="member">
+                  <img src={ImgPath.aboutMamber2} />
+                  <h3>Emma Watson</h3>
+                  <p>Managing Director</p>
+                  <div className="member-social-media-links">
+                    <img src={SvgPath.twitterWhite} />
+                    <img src={SvgPath.instagramWhite} />
+                    <img src={SvgPath.linkedinWhite} />
+                  </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+            <div className="member">
+                  <img src={ImgPath.aboutMamber3} />
+                  <h3>Will Smith</h3>
+                  <p>Product Designer</p>
+                  <div className="member-social-media-links">
+                    <img src={SvgPath.twitterWhite} />
+                    <img src={SvgPath.instagramWhite} />
+                    <img src={SvgPath.linkedinWhite} />
+                  </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide><div className="member">
+                  <img src={ImgPath.aboutMamber1} />
+                  <h3>Tom Cruise</h3>
+                  <p>Founder & Chairman</p>
+                  <div className="member-social-media-links">
+                    <img src={SvgPath.twitterWhite} />
+                    <img src={SvgPath.instagramWhite} />
+                    <img src={SvgPath.linkedinWhite} />
+                  </div>
+              </div></SwiperSlide>
+            <SwiperSlide>
+            <div className="member">
+                  <img src={ImgPath.aboutMamber2} />
+                  <h3>Emma Watson</h3>
+                  <p>Managing Director</p>
+                  <div className="member-social-media-links">
+                    <img src={SvgPath.twitterWhite} />
+                    <img src={SvgPath.instagramWhite} />
+                    <img src={SvgPath.linkedinWhite} />
+                  </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
+      <Services />
+      <a className="upArrow" href="#upScroll"><img src={SvgPath.upArrowWithBG} /></a>
     </>
   );
 };

@@ -15,12 +15,12 @@ function Footer() {
               <a className="font16px" href="">
                 Get 10% off your first order
               </a>
-              <div className="email-div">
+              <form className="email-div">
                 <input type="text" placeholder="Enter your email" />
                 <button type="submit">
                   <img src={SvgPath.sendIconWhite} />
                 </button>
-              </div>
+              </form>
             </div>
             <div className="fonter-content-divs">
               <h5 className="font20px">Support</h5>

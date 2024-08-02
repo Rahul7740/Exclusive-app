@@ -30,10 +30,10 @@ function Header() {
             </ul>
 
             <div className="header-icons-container">
-              <div className="search-conatiner">
+              <form className="search-conatiner">
                 <input type="text" className="search-input" placeholder="What are you looking for?" />
-                <button className="search-btn"><img src={SvgPath.searchIcon} alt="search" /></button>
-              </div>
+                <button type='submit' className="search-btn"><img src={SvgPath.searchIcon} alt="search" /></button>
+              </form>
               <div className="shop-icon-container">
                 <button><img src={SvgPath.heart} /></button>
                 <button><img src={SvgPath.shopIcon} /></button>

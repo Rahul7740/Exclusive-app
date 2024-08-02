@@ -6,6 +6,7 @@ import Aboutus from "./pages/Aboutus";
 import Contact from "./pages/Contact";
 import Header from "./common/Header";
 import Footer from "./common/Footer";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Aboutus" element={<Aboutus />} />
           <Route path="/Signup" element={<Signup />} />
+          <Route path="/Signup/Login" element={<Login />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
         <Footer />
