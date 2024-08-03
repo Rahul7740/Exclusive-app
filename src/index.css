@@ -67,3 +67,16 @@ body{
   right: 2%;
   bottom: 2%;
 }
+
+@keyframes transform{
+  0%{
+      transform: translateY(1000px);
+  }
+  70%{
+      transform: translateY(-50px);
+  }
+  100%{
+      transform: translateY(0);
+
+  }
+}

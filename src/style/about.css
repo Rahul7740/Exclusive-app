@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 75px;
+    animation: transform 0.5s linear forwards;
+
 }
 .ourStory-container img{
     margin-right: -135px;
