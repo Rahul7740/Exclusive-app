@@ -16,7 +16,7 @@ function Header() {
             <NavLink  className="main-logo" to={"/"}>Exclusive</NavLink>
             <ul className="navbar-nav ">
               <li className="nav-item">
-              <NavLink  className="nav-link"activeClassName="active" to={"/"}>Home</NavLink>
+              <NavLink  className="nav-link" activeClassName="active" to={"/"}>Home</NavLink>
               </li>
               <li className="nav-item">
               <NavLink  className="nav-link" activeClassName="active" to={"/Contact"}>Contact</NavLink>

@@ -24,13 +24,12 @@ const Login = () => {
                 <input type="text" placeholder="Email or Phone Number" />
                 <input type="password" placeholder="Password" />
                 <div className="login-btn-container">
-                  <button
-                    type="submit"
-                    className="login-btn"
-                  >
+                  <button type="submit" className="login-btn">
                     Log in
                   </button>
-                  <a className="forget-btn" href="">Forget Password?</a>
+                  <a className="forget-btn" href="">
+                    Forget Password?
+                  </a>
                 </div>
               </form>
             </div>

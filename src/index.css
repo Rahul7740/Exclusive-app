@@ -1,9 +1,17 @@
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body.dark {
+  color: #fff;
+  background-color: black;
+}
+
+body.light {
+  color: #000;
+  background-color: #fff;
 }
 
 .container {
@@ -36,47 +44,45 @@ input {
   outline: none;
   background: transparent;
 }
-body{
+body {
   font-family: "Inter", sans-serif;
 }
-.all-Headings{
+.all-Headings {
   font-size: 36px;
   font-weight: 700px;
 }
 
-
-.all-section{
+.all-section {
   margin: 70px 0;
 }
 
-.all-buttons{
+.all-buttons {
   padding: 16px 48px;
   font-size: 16px;
   color: white;
   display: inline-block;
   border-radius: 4px;
 }
-.viewAllBtn{
-  margin-top: 70px ;
+.viewAllBtn {
+  margin-top: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.upArrow{
+.upArrow {
   position: fixed;
   right: 2%;
   bottom: 2%;
 }
 
-@keyframes transform{
-  0%{
-      transform: translateY(1000px);
+@keyframes transform {
+  0% {
+    transform: translateY(1000px);
   }
-  70%{
-      transform: translateY(-50px);
+  70% {
+    transform: translateY(-50px);
   }
-  100%{
-      transform: translateY(0);
-
+  100% {
+    transform: translateY(0);
   }
 }
