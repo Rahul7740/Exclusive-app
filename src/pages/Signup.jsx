@@ -31,7 +31,7 @@ const Signup = () => {
                   <img src={SvgPath.googleIcon} alt="google-icon" />
                   <p>Sign up with Google</p>
               </button>
-              <div className="alreadyAc">Already have account? <Link className="signUp-to-login-btn" to={'/Signup/Login'}>Log in</Link></div>
+              <div className="alreadyAc">Already have account? <Link className="signUp-to-login-btn" to={'/login'}>Log in</Link></div>
             </div>
           </div>
         </div>

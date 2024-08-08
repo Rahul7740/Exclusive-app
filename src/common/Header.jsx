@@ -19,13 +19,13 @@ function Header() {
               <NavLink  className="nav-link" activeClassName="active" to={"/"}>Home</NavLink>
               </li>
               <li className="nav-item">
-              <NavLink  className="nav-link" activeClassName="active" to={"/Contact"}>Contact</NavLink>
+              <NavLink  className="nav-link" activeClassName="active" to={"/contact"}>Contact</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink  className="nav-link" activeClassName="active" to={"/Aboutus"}>About</NavLink>
+                <NavLink  className="nav-link" activeClassName="active" to={"/aboutus"}>About</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink  className="nav-link" activeClassName="active" to={"/Signup"}>Sign up</NavLink>
+                <NavLink  className="nav-link" activeClassName="active" to={"/signup"}>Sign up</NavLink>
               </li>
             </ul>
 

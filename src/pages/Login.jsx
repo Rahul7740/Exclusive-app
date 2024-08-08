@@ -10,8 +10,7 @@ const Login = () => {
       <section className="all-section">
         <div className="container">
           <div className="direction-container">
-            <Link to={"/"}>Home</Link>/<Link to={"/Signup"}>Singup</Link>/
-            <Link to={"/Signup/Login"}>login</Link>
+            <Link to={"/"}>Home</Link>/<Link to={"/Login"}>login</Link>
           </div>
           <div className="signup-container">
             <img src={ImgPath.signUp} />

@@ -20,10 +20,10 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Aboutus" element={<Aboutus />} />
-          <Route path="/Signup" element={<Signup />} />
-          <Route path="/Signup/Login" element={<Login />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/aboutus" element={<Aboutus />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </BrowserRouter>

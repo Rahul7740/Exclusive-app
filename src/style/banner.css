@@ -39,13 +39,35 @@
     transition: all 0.3s;
     border: none;
   }
-  
+
+
+.sliderbar-links{
+  position: relative;
+}
+
+  .sliderbar-links::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    transform: scale(0);
+    transition: all 0.6s;
+    transform-origin: left;
+  }
+  .sidebar ul li:hover .sliderbar-links::before{
+    transform: scale(1);
+  }
   .sidebar ul li:hover .sliderbar-links{
     transform: scale(1.2);
-    border-bottom: 1px dotted black;
+  }
+  
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: #ff4c4c;
   }
 
-  
   .banner {
     position: relative;
     background-color: #000;
