@@ -15,6 +15,8 @@ import SvgPath from "../assets/svg/SvgPath";
 import Button from "../snippets/butttons/button";
 import { Link } from "react-router-dom";
 
+import productss from "../json/products.json"
+
 const Product = (props) => {
   const swiperRef = useRef(null);
 
@@ -94,7 +96,7 @@ const Product = (props) => {
             className="mySwiper"
             slidesPerView={4}
           >
-            {array.map((i, index) => (
+            {productss.map((i, index) => (
               <SwiperSlide key={index}>
                 <ProductCard
                   image={i.image}

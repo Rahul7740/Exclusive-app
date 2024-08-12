@@ -1,18 +1,44 @@
-
-
 [
-  
-    {
-        "image":" ImgPath.product1",
-        "head": "HAVIT HV-G92 Gamepad",
-        "price": "$120",
-        "rate": "88",
-        "percentOFF": 40
-      },{
-        "image":"ImgPath.product1",
-        "head": "HAVIT HV-G92 Gamepad",
-        "price": "$120",
-        "rate": "88",
-        "percentOFF": 40
-      }
+  {
+    "image": "product1.png",
+    "head": "HAVIT HV-G92 Gamepad",
+    "price": "$120",
+    "rate": "88",
+    "percentOFF": 40
+  },
+  {
+    "image": "product2.png",
+    "head": "AK-900 Wired Keyboard",
+    "price": "$960",
+    "rate": "75",
+    "percentOFF": 35
+  },
+  {
+    "image": "product3.png",
+    "head": "IPS LCD Gaming Monitor",
+    "price": "$370",
+    "rate": "99",
+    "percentOFF": 40
+  },
+  {
+    "image": "product4.png",
+    "head": "S-Series Comfort Chair ",
+    "price": "$375",
+    "rate": "74",
+    "percentOFF": 50
+  },
+  {
+    "image": "product5.png",
+    "head": "RGB liquid CPU Cooler",
+    "price": "$375",
+    "rate": "88",
+    "percentOFF": 60
+  },
+  {
+    "image": "product6.png",
+    "head": "ASUS FHD Gaming Laptop",
+    "price": "$375",
+    "rate": "88",
+    "percentOFF": 15
+  }
 ]

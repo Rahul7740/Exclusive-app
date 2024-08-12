@@ -1,0 +1,27 @@
+[
+    {
+              "image": "this-month-1.png",
+              "head": "The north coat",
+              "price": "$260",
+              "rate": "88"
+            },
+            {
+              "image": "this-month-2.png",
+              "head": "Gucci duffle bag",
+              "price": "$960",
+              "rate": "75"
+        
+            },
+            {
+              "image": "this-month-3.png",
+              "head": "RGB liquid CPU Cooler",
+              "price": "$160",
+              "rate": "99"
+            },
+            {
+              "image": "this-month-4.png",
+              "head": "Small BookSelf ",
+              "price": "$360",
+              "rate": "74"
+            }
+]

@@ -4,7 +4,7 @@ const ProductCard = (props) => {
   return (
     <div className="card-wrapper">
       <div className="card-image-container">
-        <img className="card-img"  src={props.image} alt={props.head} />
+        <img className="card-img"  src={require(`../../assets/images/${props.image}`)} alt={props.head} />
         <div className="add-to-cart">Add To Cart</div>
         <div className="like-Eye-container">
           <img className="card-like-btn" src={SvgPath.heartWhiteBG} alt="likeBtn" />

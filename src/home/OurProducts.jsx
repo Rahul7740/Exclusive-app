@@ -7,6 +7,7 @@ import SvgPath from "../assets/svg/SvgPath";
 import Button from "../snippets/butttons/button";
 import { Link } from "react-router-dom";
 
+import ourProductss from "../json/ourProducts.json"
 const OurProducts = (props) => {
   const array1 = [
     {
@@ -85,7 +86,7 @@ const OurProducts = (props) => {
           </div>
 
           <div className="products">
-            {array1.map((i, index) => (
+            {ourProductss.map((i, index) => (
               <Fragment key={index}>
                 <ProductCard
                   image={i.image}

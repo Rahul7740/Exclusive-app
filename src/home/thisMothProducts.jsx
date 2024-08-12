@@ -12,6 +12,8 @@ import "../style/product.css";
 import ProductCard from "../snippets/product-card/product-card";
 import ImgPath from "../assets/images/ImgPath";
 import Button from "../snippets/butttons/button";
+ 
+import thisMonthProducts from "../json/thisMonthProducts.json"
 
 const ThisMothProducts = (props) => {
   const swiperRef = useRef(null);
@@ -71,7 +73,7 @@ const ThisMothProducts = (props) => {
             className="mySwiper"
             slidesPerView={4}
           >
-            {array2.map((i, index) => (
+            {thisMonthProducts.map((i, index) => (
               <SwiperSlide key={index}>
                 <ProductCard
                   image={i.image}

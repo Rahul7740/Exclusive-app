@@ -17,9 +17,10 @@ import BannerDesign from "../snippets/BannerDesign";
 // import Button from "../snippets/butttons/button";
 // import { useTheme } from "../contaxt/themecontaxt";
 
+
 function Banner() {
   // const { theme, modebtn } = useTheme();
-
+  
   return (
     <>
       <section className="sectionConatiner">
@@ -134,7 +135,9 @@ function Banner() {
       <a className="upArrow" href="#upScroll">
         <img src={SvgPath.upArrowWithBG} />
       </a>
+              <img src="" alt="" />
     </>
+    
   );
 }
 
