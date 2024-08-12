@@ -20,51 +20,6 @@ import productss from "../json/products.json"
 const Product = (props) => {
   const swiperRef = useRef(null);
 
-  const array = [
-    {
-      image: ImgPath.product1,
-      head: "HAVIT HV-G92 Gamepad",
-      price: "$120",
-      rate: "88",
-      percentOFF: 40,
-    },
-    {
-      image: ImgPath.product2,
-      head: "AK-900 Wired Keyboard",
-      price: "$960",
-      rate: "75",
-      percentOFF: 35,
-    },
-    {
-      image: ImgPath.product3,
-      head: "IPS LCD Gaming Monitor",
-      price: "$370",
-      rate: "99",
-      percentOFF: 40,
-    },
-    {
-      image: ImgPath.product4,
-      head: "S-Series Comfort Chair ",
-      price: "$375",
-      rate: "74",
-      percentOFF: 50,
-    },
-    {
-      image: ImgPath.product5,
-      head: "RGB liquid CPU Cooler",
-      price: "$375",
-      rate: "88",
-      percentOFF: 60,
-    },
-    {
-      image: ImgPath.product6,
-      head: "ASUS FHD Gaming Laptop",
-      price: "$375",
-      rate: "88",
-      percentOFF: 15,
-    },
-  ];
-
   return (
     <section className="all-section">
       <div className="pro-container container">

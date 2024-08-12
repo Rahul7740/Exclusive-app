@@ -18,35 +18,6 @@ import thisMonthProducts from "../json/thisMonthProducts.json"
 const ThisMothProducts = (props) => {
   const swiperRef = useRef(null);
 
-  const array2 = [
-    {
-      image: ImgPath.thismonth1,
-      head: "The north coat",
-      price: "$260",
-      rate: "88",
-    },
-    {
-      image: ImgPath.thismonth2,
-      head: "Gucci duffle bag",
-      price: "$960",
-      rate: "75",
-
-    },
-    {
-      image: ImgPath.thismonth3,
-      head: "RGB liquid CPU Cooler",
-      price: "$160",
-      rate: "99",
-    },
-    {
-      image: ImgPath.thismonth4,
-      head: "Small BookSelf ",
-      price: "$360",
-      rate: "74",
-    },
-    
-  ];
-
   return (
     <section className="all-section">
       <div className="pro-container container">
