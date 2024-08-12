@@ -73,6 +73,7 @@ body {
   position: fixed;
   right: 2%;
   bottom: 2%;
+  z-index: 9999999999999;
 }
 
 @keyframes transform {
@@ -86,3 +87,16 @@ body {
     transform: translateY(0);
   }
 }
+
+.all-projects{
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  gap: 5px;
+  padding: 50px 0;
+}
+

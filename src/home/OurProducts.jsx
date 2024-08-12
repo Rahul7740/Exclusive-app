@@ -1,15 +1,14 @@
-import React, { useRef } from "react";
+import React, { Fragment } from "react";
 
 import "../style/product.css";
 import ProductCard from "../snippets/product-card/product-card";
 import ImgPath from "../assets/images/ImgPath";
 import SvgPath from "../assets/svg/SvgPath";
 import Button from "../snippets/butttons/button";
+import { Link } from "react-router-dom";
 
 const OurProducts = (props) => {
-  const swiperRef = useRef(null);
-
-  const array = [
+  const array1 = [
     {
       image: ImgPath.ourProduct1,
       head: "Breed Dry Dog Food",
@@ -21,7 +20,6 @@ const OurProducts = (props) => {
       head: "CANON EOS DSLR Camera",
       price: "$1599",
       rate: "75",
-
     },
     {
       image: ImgPath.ourProduct3,
@@ -40,7 +38,7 @@ const OurProducts = (props) => {
       head: "Kids Electric Car",
       price: "$960",
       rate: "88",
-      percentOFF:"NEW",
+      percentOFF: "NEW",
     },
     {
       image: ImgPath.ourProduct6,
@@ -53,7 +51,7 @@ const OurProducts = (props) => {
       head: "GP11 Shooter USB Gamepad",
       price: "$770",
       rate: "55",
-      percentOFF:"NEW",
+      percentOFF: "NEW",
     },
     {
       image: ImgPath.ourProduct8,
@@ -61,7 +59,6 @@ const OurProducts = (props) => {
       price: "$660",
       rate: "60",
     },
-    
   ];
 
   return (
@@ -78,7 +75,7 @@ const OurProducts = (props) => {
             </div>
             <div></div>
             <div className="overview-btns">
-            <button>
+              <button>
                 <img src={SvgPath.leftArrowWithBG} alt="Previous" />
               </button>
               <button>
@@ -88,7 +85,8 @@ const OurProducts = (props) => {
           </div>
 
           <div className="products">
-            {array.map((i, index) => (
+            {array1.map((i, index) => (
+              <Fragment key={index}>
                 <ProductCard
                   image={i.image}
                   head={i.head}
@@ -96,12 +94,14 @@ const OurProducts = (props) => {
                   rate={i.rate}
                   percentOFF={i.percentOFF}
                 />
+              </Fragment>
             ))}
           </div>
-          
         </div>
-        <div className="viewAllBtn" >
-          <Button name="View All Products" bgColor="#DB4444" />
+        <div className="viewAllBtn">
+          <Link to={"/viewAllProducts"}>
+            <Button name="View All Products" bgColor="#DB4444" />
+          </Link>
         </div>
       </div>
     </section>

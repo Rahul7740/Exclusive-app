@@ -42,26 +42,26 @@ const Aboutus = () => {
               <img src={ImgPath.ourStory} alt="our story img" />
             </div>
           </div>
-          <div class="stats-container">
-            <div class="stat-services">
-              <img src={SvgPath.statServices1} />
-              <h3 class="stat-number">10.5k</h3>
-              <p class="stat-label">Sallers active our site</p>
+          <div className="stats-container">
+            <div className="stat-services">
+              <img src={SvgPath.statServices1} alt="Servoces" />
+              <h3 className="stat-number">10.5k</h3>
+              <p className="stat-label">Sallers active our site</p>
             </div>
-            <div class="stat-services active">
-              <img src={SvgPath.statServices2} />
-              <h3 class="stat-number">33k</h3>
-              <p class="stat-label">Mopnthly Produduct Sale</p>
+            <div className="stat-services active">
+              <img src={SvgPath.statServices2}  alt="Servoces" />
+              <h3 className="stat-number">33k</h3>
+              <p className="stat-label">Mopnthly Produduct Sale</p>
             </div>
-            <div class="stat-services">
-              <img src={SvgPath.statServices3} />
-              <h3 class="stat-number">45.5k</h3>
-              <p class="stat-label">Customer active in our site</p>
+            <div className="stat-services">
+              <img src={SvgPath.statServices3}  alt="Servoces" />
+              <h3 className="stat-number">45.5k</h3>
+              <p className="stat-label">Customer active in our site</p>
             </div>
-            <div class="stat-services">
-              <img src={SvgPath.statServices4} />
-              <h3 class="stat-number">25k</h3>
-              <p class="stat-label">Anual gross sale in our site</p>
+            <div className="stat-services">
+              <img src={SvgPath.statServices4}  alt="Servoces" />
+              <h3 className="stat-number">25k</h3>
+              <p className="stat-label">Anual gross sale in our site</p>
             </div>
           </div>
         </div>
@@ -79,59 +79,59 @@ const Aboutus = () => {
           >
             <SwiperSlide>
               <div className="member">
-                  <img src={ImgPath.aboutMamber1} />
+                  <img src={ImgPath.aboutMamber1} alt="abountmember" />
                   <h3>Tom Cruise</h3>
                   <p>Founder & Chairman</p>
                   <div className="member-social-media-links">
-                    <img src={SvgPath.twitterWhite} />
-                    <img src={SvgPath.instagramWhite} />
-                    <img src={SvgPath.linkedinWhite} />
+                    <img src={SvgPath.twitterWhite} alt="twitter" />
+                    <img src={SvgPath.instagramWhite} alt="instagram" />
+                    <img src={SvgPath.linkedinWhite} alt="linkedin" />
                   </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
             <div className="member">
-                  <img src={ImgPath.aboutMamber2} />
+                  <img src={ImgPath.aboutMamber2} alt="abountmember" />
                   <h3>Emma Watson</h3>
                   <p>Managing Director</p>
                   <div className="member-social-media-links">
-                    <img src={SvgPath.twitterWhite} />
-                    <img src={SvgPath.instagramWhite} />
-                    <img src={SvgPath.linkedinWhite} />
+                    <img src={SvgPath.twitterWhite} alt="twitter"  />
+                    <img src={SvgPath.instagramWhite}  alt="instagram" />
+                    <img src={SvgPath.linkedinWhite} alt="linkedin" />
                   </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
             <div className="member">
-                  <img src={ImgPath.aboutMamber3} />
+                  <img src={ImgPath.aboutMamber3} alt="abountmember" />
                   <h3>Will Smith</h3>
                   <p>Product Designer</p>
                   <div className="member-social-media-links">
-                    <img src={SvgPath.twitterWhite} />
-                    <img src={SvgPath.instagramWhite} />
-                    <img src={SvgPath.linkedinWhite} />
+                    <img src={SvgPath.twitterWhite} alt="twitter"  />
+                    <img src={SvgPath.instagramWhite}  alt="instagram" />
+                    <img src={SvgPath.linkedinWhite} alt="linkedin" />
                   </div>
               </div>
             </SwiperSlide>
             <SwiperSlide><div className="member">
-                  <img src={ImgPath.aboutMamber1} />
+                  <img src={ImgPath.aboutMamber1}  alt="abountmember"/>
                   <h3>Tom Cruise</h3>
                   <p>Founder & Chairman</p>
                   <div className="member-social-media-links">
-                    <img src={SvgPath.twitterWhite} />
-                    <img src={SvgPath.instagramWhite} />
-                    <img src={SvgPath.linkedinWhite} />
+                    <img src={SvgPath.twitterWhite} alt="twitter"  />
+                    <img src={SvgPath.instagramWhite}  alt="instagram" />
+                    <img src={SvgPath.linkedinWhite} alt="linkedin" />
                   </div>
               </div></SwiperSlide>
             <SwiperSlide>
             <div className="member">
-                  <img src={ImgPath.aboutMamber2} />
+                  <img src={ImgPath.aboutMamber2}  alt="abountmember"/>
                   <h3>Emma Watson</h3>
                   <p>Managing Director</p>
                   <div className="member-social-media-links">
-                    <img src={SvgPath.twitterWhite} />
-                    <img src={SvgPath.instagramWhite} />
-                    <img src={SvgPath.linkedinWhite} />
+                    <img src={SvgPath.twitterWhite} alt="twitter"  />
+                    <img src={SvgPath.instagramWhite}  alt="instagram" />
+                    <img src={SvgPath.linkedinWhite} alt="linkedin" />
                   </div>
               </div>
             </SwiperSlide>
@@ -139,7 +139,7 @@ const Aboutus = () => {
         </div>
       </section>
       <Services />
-      <a className="upArrow" href="#upScroll"><img src={SvgPath.upArrowWithBG} /></a>
+      <a className="upArrow" href="#upScroll"><img src={SvgPath.upArrowWithBG} alt="upArrow" /></a>
     </>
   );
 };

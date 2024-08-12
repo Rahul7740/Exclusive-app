@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Header from "./common/Header";
 import Footer from "./common/Footer";
 import Login from "./pages/Login";
+import ViewAllProducts from "./pages/ViewAllProducts";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/viewAllProducts" element={<ViewAllProducts />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -11,13 +11,12 @@ import { Pagination, Navigation } from "swiper/modules";
 import "../style/product.css";
 import ProductCard from "../snippets/product-card/product-card";
 import ImgPath from "../assets/images/ImgPath";
-import SvgPath from "../assets/svg/SvgPath";
 import Button from "../snippets/butttons/button";
 
 const ThisMothProducts = (props) => {
   const swiperRef = useRef(null);
 
-  const array = [
+  const array2 = [
     {
       image: ImgPath.thismonth1,
       head: "The north coat",
@@ -72,7 +71,7 @@ const ThisMothProducts = (props) => {
             className="mySwiper"
             slidesPerView={4}
           >
-            {array.map((i, index) => (
+            {array2.map((i, index) => (
               <SwiperSlide key={index}>
                 <ProductCard
                   image={i.image}

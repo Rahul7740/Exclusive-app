@@ -4,12 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "./contaxt/themecontaxt";
+import { SearchProvider } from "./contaxt/SearchFIlterContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-      <App />
+      <SearchProvider>
+        <App />
+      </SearchProvider>
     </ThemeProvider>
   </React.StrictMode>
 );

@@ -1,0 +1,18 @@
+
+
+[
+  
+    {
+        "image":" ImgPath.product1",
+        "head": "HAVIT HV-G92 Gamepad",
+        "price": "$120",
+        "rate": "88",
+        "percentOFF": 40
+      },{
+        "image":"ImgPath.product1",
+        "head": "HAVIT HV-G92 Gamepad",
+        "price": "$120",
+        "rate": "88",
+        "percentOFF": 40
+      }
+]

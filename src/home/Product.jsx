@@ -13,6 +13,7 @@ import ProductCard from "../snippets/product-card/product-card";
 import ImgPath from "../assets/images/ImgPath";
 import SvgPath from "../assets/svg/SvgPath";
 import Button from "../snippets/butttons/button";
+import { Link } from "react-router-dom";
 
 const Product = (props) => {
   const swiperRef = useRef(null);
@@ -61,7 +62,6 @@ const Product = (props) => {
       percentOFF: 15,
     },
   ];
-  
 
   return (
     <section className="all-section">
@@ -107,10 +107,11 @@ const Product = (props) => {
             ))}
           </Swiper>
         </div>
-        <div className="viewAllBtn" >
-          <Button name="View All Products" bgColor="#DB4444" />
+        <div className="viewAllBtn">
+          <Link to={"/viewAllProducts"}>
+            <Button name="View All Products" bgColor="#DB4444" />
+          </Link>
         </div>
-        
       </div>
     </section>
   );
