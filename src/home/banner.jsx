@@ -14,13 +14,16 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import BannerDesign from "../snippets/BannerDesign";
+import { Fragment } from "react";
 // import Button from "../snippets/butttons/button";
 // import { useTheme } from "../contaxt/themecontaxt";
 
+import links from "../json/bannercategories.json";
 
+import phones from "../json/iphones.json";
 function Banner() {
   // const { theme, modebtn } = useTheme();
-  
+
   return (
     <>
       <section className="sectionConatiner">
@@ -30,53 +33,16 @@ function Banner() {
           <div className="sliderbar-AND-banner-DIV ">
             <nav className="sidebar">
               <ul>
-                <li className="flex-spaceBetween">
-                  <a className="sliderbar-links" href="#">
-                    Woman's Fashion
-                  </a>
-                  <img src={SvgPath.rightArrow} alt="right-arrow" />
-                </li>
-                <li className="flex-spaceBetween">
-                  <a className="sliderbar-links" href="#">
-                    Men's Fashion
-                  </a>
-                  <img src={SvgPath.rightArrow} alt="right-arrow" />
-                </li>
-                <li>
-                  <a className="sliderbar-links" href="#">
-                    Electronics
-                  </a>
-                </li>
-                <li>
-                  <a className="sliderbar-links" href="#">
-                    Home & Lifestyle
-                  </a>
-                </li>
-                <li>
-                  <a className="sliderbar-links" href="#">
-                    Medicine
-                  </a>
-                </li>
-                <li>
-                  <a className="sliderbar-links" href="#">
-                    Sports & Outdoor
-                  </a>
-                </li>
-                <li>
-                  <a className="sliderbar-links" href="#">
-                    Baby's & Toys
-                  </a>
-                </li>
-                <li>
-                  <a className="sliderbar-links" href="#">
-                    Groceries & Pets
-                  </a>
-                </li>
-                <li>
-                  <a className="sliderbar-links" href="#">
-                    Health & Beauty
-                  </a>
-                </li>
+                {links.map((item, index) => (
+                  <li className="flex-spaceBetween" key={index}>
+                    <Link className="sliderbar-links" to="/error">
+                      {item.name}
+                    </Link>
+                    {item.img && (
+                      <img src={SvgPath.rightArrow} alt="right-arrow" />
+                    )}
+                  </li>
+                ))}
               </ul>
             </nav>
             <Swiper
@@ -93,41 +59,15 @@ function Banner() {
               modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper"
             >
-              <SwiperSlide>
-                <BannerDesign
-                  name="iPhone 14 Series"
-                  img={ImgPath.iphone14}
-                  oFFpercent="15%"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <BannerDesign
-                  name="iPhone 13 Series"
-                  img={ImgPath.iphone13}
-                  oFFpercent="12%"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <BannerDesign
-                  name="iPhone 12 Series"
-                  img={ImgPath.iphone12}
-                  oFFpercent="19%"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <BannerDesign
-                  name="iPhone 11 Series"
-                  img={ImgPath.iphone11}
-                  oFFpercent="30%"
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <BannerDesign
-                  name="iPhone 10 Series"
-                  img={ImgPath.iphone10}
-                  oFFpercent="10%"
-                />
-              </SwiperSlide>
+              {phones.map((i, index) => (
+                <SwiperSlide key={index}>
+                  <BannerDesign
+                    name={i.name}
+                    img={i.img}
+                    oFFpercent={i.oFFpercent}
+                  />
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>
@@ -135,9 +75,8 @@ function Banner() {
       <a className="upArrow" href="#upScroll">
         <img src={SvgPath.upArrowWithBG} />
       </a>
-              <img src="" alt="" />
+      <img src="" alt="" />
     </>
-    
   );
 }
 

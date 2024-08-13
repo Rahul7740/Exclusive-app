@@ -99,4 +99,16 @@ body {
   gap: 5px;
   padding: 50px 0;
 }
+.error-div{
+  padding-top: 50px;
+  text-align: center;
 
+}
+.error-div h1{
+  font-size: 110px;
+  margin-bottom: 40px;
+}
+.error-div p {
+  font-size: 16px;
+  margin-bottom: 80px;
+}

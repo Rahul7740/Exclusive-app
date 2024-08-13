@@ -8,6 +8,12 @@
   justify-content: space-between;
   padding: 47px 0 23px 0;
 }
+.nav-link {
+  color: #070707;
+}
+.nav-link:hover{
+  border-bottom: 2px solid #ff634759; /* or any color you prefer */
+}
 .nav-link.active {
   border-bottom: 2px solid #ff6347; /* or any color you prefer */
   color: #ff6347; /* match the border color or any other desired color */
@@ -27,9 +33,7 @@
   list-style: none;
 }
 
-.nav-link {
-  color: #070707;
-}
+
 .header-icons-container {
   justify-self: self-end;
   display: inline-flex;

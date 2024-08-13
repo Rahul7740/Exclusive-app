@@ -8,6 +8,7 @@ import Header from "./common/Header";
 import Footer from "./common/Footer";
 import Login from "./pages/Login";
 import ViewAllProducts from "./pages/ViewAllProducts";
+import Error from "./pages/Error";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/viewAllProducts" element={<ViewAllProducts />} />
+          <Route path="/error" element={<Error />} />
         </Routes>
         <Footer />
       </BrowserRouter>

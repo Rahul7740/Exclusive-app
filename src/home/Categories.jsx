@@ -1,15 +1,15 @@
 import ImgPath from "../assets/images/ImgPath";
 import SvgPath from "../assets/svg/SvgPath";
 import "../style/Categories.css";
-
-const categories = [
-  { name: "Phones", icon: SvgPath.phone },
-  { name: "Computers", icon: SvgPath.computer },
-  { name: "SmartWatch", icon: SvgPath.smartWatch },
-  { name: "Camera", icon: SvgPath.camera },
-  { name: "HeadPhones", icon: SvgPath.headPhone },
-  { name: "Gaming", icon: SvgPath.gamePad },
-];
+import categoriess from "../json/categoriesSection.json"
+// const categories = [
+//   { name: "Phones", icon: SvgPath.phone },
+//   { name: "Computers", icon: SvgPath.computer },
+//   { name: "SmartWatch", icon: SvgPath.smartWatch },
+//   { name: "Camera", icon: SvgPath.camera },
+//   { name: "HeadPhones", icon: SvgPath.headPhone },
+//   { name: "Gaming", icon: SvgPath.gamePad },
+// ];
 
 function Categories(props) {
   return (
@@ -29,14 +29,12 @@ function Categories(props) {
               </div>
             </div>
             <div className="categories">
-              {categories.map((category, index) => (
+              {categoriess.map((category, index) => (
                 <div
                   key={index}
-                  className={`category-card ${
-                    category.selected ? "selected" : ""
-                  }`}
+                  className="category-card"
                 >
-                  <img src={category.icon} />
+                  <img src={require(`../assets/svg/${category.icon}`)} alt={category.name} />
                   <p>{category.name}</p>
                 </div>
               ))}

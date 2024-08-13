@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Woman's Fashion",
+        "img": true
+      },
+      {
+        "name": "Men's Fashion",
+        "img": true
+      },
+      {
+        "name": "Electronics"
+      },
+      {
+        "name": "Home & Lifestyle"
+      },
+      {
+        "name": "Medicine"
+      },
+      {
+        "name": "Sports & Outdoor"
+      },
+      {
+        "name": "Baby's & Toys"
+      },
+      {
+        "name": "Groceries & Pets"
+      },
+      {
+        "name": "Health & Beauty"
+      }
+]

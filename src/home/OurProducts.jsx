@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 
 import "../style/product.css";
 import ProductCard from "../snippets/product-card/product-card";
-import ImgPath from "../assets/images/ImgPath";
 import SvgPath from "../assets/svg/SvgPath";
 import Button from "../snippets/butttons/button";
 import { Link } from "react-router-dom";
@@ -28,7 +27,7 @@ const OurProducts = (props) => {
                 <img src={SvgPath.leftArrowWithBG} alt="Previous" />
               </button>
               <button>
-                <img src={SvgPath.rightArrowWithBG} alt="Next" />
+                <img src={SvgPath.rightArrowWithBG} alt="Next" /> 
               </button>
             </div>
           </div>

@@ -1,0 +1,26 @@
+[
+    {
+        "name":"iPhone 14 Series",
+        "img":"iphone14.png",
+        "oFFpercent":"15%" 
+    },
+    {
+        "name":"iPhone 13 Series",
+        "img":"iphone13.png",
+        "oFFpercent":"12%" 
+    },
+    {
+        "name":"iPhone 12 Series",
+        "img":"iphone12.png",
+        "oFFpercent":"19%" 
+    },
+    {
+        "name":"iPhone 11 Series",
+        "img":"iphone11.png",
+        "oFFpercent":"30%" 
+    },{
+        "name":"iPhone 10 Series",
+        "img":"iphone10.png",
+        "oFFpercent":"10%" 
+    }
+]
