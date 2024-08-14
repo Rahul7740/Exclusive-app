@@ -74,8 +74,22 @@ const Aboutus = () => {
             }}
             modules={[Pagination]}
             className="members-swiper"
-            slidesPerView={3}
+            // slidesPerView={3}
             spaceBetween={30}
+            breakpoints={{
+              540: {
+                slidesPerView: 1,
+              },
+              650: {
+                slidesPerView: 2,
+              },
+              900: {
+                slidesPerView: 2,
+              },
+              1100: {
+                slidesPerView: 3,
+              },
+            }}
           >
             <SwiperSlide>
               <div className="member">

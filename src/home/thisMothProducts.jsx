@@ -14,6 +14,7 @@ import ImgPath from "../assets/images/ImgPath";
 import Button from "../snippets/butttons/button";
  
 import thisMonthProducts from "../json/thisMonthProducts.json"
+import { Link } from "react-router-dom";
 
 const ThisMothProducts = (props) => {
   const swiperRef = useRef(null);
@@ -32,7 +33,9 @@ const ThisMothProducts = (props) => {
             </div>
             <div></div>
             <div className="overview-btns">
+              <Link to={"/viewAllProducts"}>
               <Button name="View All" bgColor="#DB4444" />
+              </Link>
             </div>
           </div>
 
@@ -42,7 +45,24 @@ const ThisMothProducts = (props) => {
             navigation={false} // Disable default navigation
             modules={[Pagination, Navigation]}
             className="mySwiper"
-            slidesPerView={4}
+            // slidesPerView={4}
+            breakpoints={{
+              540: {
+                slidesPerView: 1,
+              },
+              650: {
+                slidesPerView: 2,
+              },
+              900: {
+                slidesPerView: 3,
+              },
+              1100: {
+                slidesPerView: 4,
+              },
+              1440: {
+                slidesPerView: 4,
+              },
+            }}
           >
             {thisMonthProducts.map((i, index) => (
               <SwiperSlide key={index}>

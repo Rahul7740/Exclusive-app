@@ -24,27 +24,28 @@ function Header() {
             <NavLink className="main-logo" to={"/"}>
               Exclusive
             </NavLink>
-            <ul className="navbar-nav ">
+            <ul className={`navbar-nav ${menu1 === false && "navbar-nav-transform"}`}  >
               {menuLinks.map((i, index) => (
                 <li className="nav-item" key={index}>
                   <NavLink
                     className="nav-link"
                     activeclassname="active"
                     to={i.to}
+                    onClick={()=>{setMenu(false)}}
                   >
                     {" "}
                     {i.name}{" "}
                   </NavLink>
                 </li>
               ))}
-              <button onClick={()=>{setMenu(false)}} className="display-none-655 close-btn">
+              <button onClick={()=>{setMenu(false)}} className="display-none-to-block-655 close-btn">
                   <img src={SvgPath.close} />
                 </button>
             </ul>
 
             <div className="header-icons-container">
-              <div className="res-display-none">
-                <form className="search-conatiner display-None">
+              <div className="display-block-none-1100">
+                <form className="search-conatiner display-none-black-1100">
                   <input
                     type="text"
                     onChange={setSerachValue}
@@ -58,7 +59,7 @@ function Header() {
               </div>
 
               <div className="shop-icon-container">
-                <button type="submit" className="search-btn display-none">
+                <button type="submit" className="display-none-block-1100 search-btn ">
                   <img src={SvgPath.searchIcon} alt="search" />
                 </button>
                 <button>
@@ -67,7 +68,7 @@ function Header() {
                 <button>
                   <img src={SvgPath.shopIcon} />
                 </button>
-                <button onClick={()=>{setMenu(true)}} className="display-none-655">
+                <button onClick={()=>{setMenu(true)}} className="display-none-to-block-655">
                   <img src={SvgPath.menu} />
                 </button>
               </div>

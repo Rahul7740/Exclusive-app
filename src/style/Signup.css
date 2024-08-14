@@ -3,8 +3,9 @@
     align-items: center;
     justify-content: space-between;
     animation: transform 0.5s linear forwards;
+    gap: 10px;
 }
-.signup-container img{
+.signup-container .signup-banner{
     margin-left: -159px;
 }
 .signup{
@@ -83,4 +84,18 @@
 .forget-btn{
     color: #DB4444;
     font-size: 16px;
+}
+
+@media (max-width:1000px){
+    .signup-container{
+        flex-direction: column;
+    }
+    .signup-container .signup-banner{
+        margin: 0 auto 20px;
+    }
+    .signup{
+        gap: 25px;
+        max-width: 650px;
+        width: 100%;
+    }
 }

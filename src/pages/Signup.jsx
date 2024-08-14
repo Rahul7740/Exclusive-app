@@ -13,7 +13,7 @@ const Signup = () => {
             <Link to={"/"}>Home</Link>/<Link to={"/Signup"}>Singup</Link>
           </div>
           <div className="signup-container">
-            <img src={ImgPath.signUp} />
+            <img className="signup-banner" src={ImgPath.signUp} />
             <div className="signup">
               <div className="signup-head">
                 <h2>Create an account</h2>

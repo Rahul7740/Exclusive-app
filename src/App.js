@@ -13,14 +13,9 @@ import Error from "./pages/Error";
 function App() {
   return (
     <>
-      {/* <Header />
-      <Banner />
-      <Product  title="Today's" head="Flash Sales"/>
-      <Categories title="Categories" head="Browse By Category"/> */}
-
       <BrowserRouter>
         <Header />
-        {/* <Routes>
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/signup" element={<Signup />} />
@@ -29,7 +24,7 @@ function App() {
           <Route path="/viewAllProducts" element={<ViewAllProducts />} />
           <Route path="/error" element={<Error />} />
         </Routes>
-        <Footer /> */}
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   );

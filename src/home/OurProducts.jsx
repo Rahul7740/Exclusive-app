@@ -32,7 +32,7 @@ const OurProducts = (props) => {
             </div>
           </div>
 
-          <div className="products">
+          <div className="all-projects">
             {ourProductss.map((i, index) => (
               <Fragment key={index}>
                 <ProductCard

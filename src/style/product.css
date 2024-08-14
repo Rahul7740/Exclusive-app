@@ -32,12 +32,7 @@
     line-height: 20px;
     color: #db4444;
 }
-.overview-h1{
-    font-size: 36px;
-    font-weight: bolder;
-    line-height: 48px;
-    letter-spacing: 3px;
-}
+
 .overview-btns{
     display: flex;
     gap: 20px;
@@ -51,19 +46,6 @@
         align-items: center;
     }
 }
-.products{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 40px;
-    row-gap: 60px;
-    /* ::-webkit-scrollbar {
-        display: none;
-    } */
-}
-.products::-webkit-scrollbar {
-    display: none;
-}
 
 
 .card-rating{
@@ -72,6 +54,7 @@
 .card-wrapper{
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 17px;
 }
 .card-image-container{
@@ -141,4 +124,14 @@
 }
 .card-percentNew{
     background-color: #00FF66;
+}
+
+
+@media (max-width:640px){
+    .card-wrapper{
+        align-items: center;
+    }
+    .add-to-cart{
+        transform: scaleY(1)
+    }
 }

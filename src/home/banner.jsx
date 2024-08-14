@@ -14,7 +14,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import BannerDesign from "../snippets/BannerDesign";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 // import Button from "../snippets/butttons/button";
 // import { useTheme } from "../contaxt/themecontaxt";
 
@@ -24,6 +24,12 @@ import phones from "../json/iphones.json";
 function Banner() {
   // const { theme, modebtn } = useTheme();
 
+  const [slide,setSlide] = useState(false)
+
+  function changeSlide(){
+    setSlide(slide === false ? true : false)
+  }
+
   return (
     <>
       <section className="sectionConatiner">
@@ -31,7 +37,8 @@ function Banner() {
         {/* <h1>{theme}</h1> */}
         <div className="container">
           <div className="sliderbar-AND-banner-DIV ">
-            <nav className="sidebar">
+            <nav className={`sidebar ${slide === true && "slidebar-transform"}`}>
+              <button onClick={changeSlide} className="slidbar-show-hide display-none-block-1100"><img src={SvgPath.rightArrow} alt="" /></button>
               <ul>
                 {links.map((item, index) => (
                   <li className="flex-spaceBetween" key={index}>

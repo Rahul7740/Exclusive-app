@@ -27,6 +27,7 @@
   align-items: center;
   cursor: pointer;
   transition: all 0.3s;
+  margin: 0 auto;
 }
 
 .category-card img {
@@ -53,4 +54,9 @@
 }
 .section-title {
   padding: 20px 0 60px 0;
+}
+@media (max-width:900px){
+  .categories-main-container{
+    padding: 40px 0;
+  }
 }
