@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import "../style/header.css";
@@ -12,10 +12,13 @@ function Header() {
   function setSerachValue(event) {
     setsearch(event.target.value);
   }
-
+  const [menu1 , setMenu] = useState(false)
+  
+  console.log(menu1);
+  
   return (
     <>
-      <header id="upScroll" className="header-section">
+      <header id="upScroll"  className="header-section">
         <div className="container">
           <div className="header">
             <NavLink className="main-logo" to={"/"}>
@@ -24,30 +27,48 @@ function Header() {
             <ul className="navbar-nav ">
               {menuLinks.map((i, index) => (
                 <li className="nav-item" key={index}>
-                  <NavLink  className="nav-link" activeclassname="active" to={i.to}> {i.name} </NavLink>
+                  <NavLink
+                    className="nav-link"
+                    activeclassname="active"
+                    to={i.to}
+                  >
+                    {" "}
+                    {i.name}{" "}
+                  </NavLink>
                 </li>
               ))}
-              
+              <button onClick={()=>{setMenu(false)}} className="display-none-655 close-btn">
+                  <img src={SvgPath.close} />
+                </button>
             </ul>
 
             <div className="header-icons-container">
-              <form className="search-conatiner">
-                <input
-                  type="text"
-                  onChange={setSerachValue}
-                  className="search-input"
-                  placeholder="What are you looking for?"
-                />
-                <button type="submit" className="search-btn">
+              <div className="res-display-none">
+                <form className="search-conatiner display-None">
+                  <input
+                    type="text"
+                    onChange={setSerachValue}
+                    className="search-input"
+                    placeholder="What are you looking for?"
+                  />
+                  <button type="submit" className="search-btn">
+                    <img src={SvgPath.searchIcon} alt="search" />
+                  </button>
+                </form>
+              </div>
+
+              <div className="shop-icon-container">
+                <button type="submit" className="search-btn display-none">
                   <img src={SvgPath.searchIcon} alt="search" />
                 </button>
-              </form>
-              <div className="shop-icon-container">
                 <button>
                   <img src={SvgPath.heart} />
                 </button>
                 <button>
                   <img src={SvgPath.shopIcon} />
+                </button>
+                <button onClick={()=>{setMenu(true)}} className="display-none-655">
+                  <img src={SvgPath.menu} />
                 </button>
               </div>
             </div>

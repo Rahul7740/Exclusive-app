@@ -20,7 +20,7 @@ function App() {
 
       <BrowserRouter>
         <Header />
-        <Routes>
+        {/* <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/signup" element={<Signup />} />
@@ -29,7 +29,7 @@ function App() {
           <Route path="/viewAllProducts" element={<ViewAllProducts />} />
           <Route path="/error" element={<Error />} />
         </Routes>
-        <Footer />
+        <Footer /> */}
       </BrowserRouter>
     </>
   );

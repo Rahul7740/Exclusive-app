@@ -55,3 +55,43 @@
   align-items: center;
   gap: 10px;
 }
+
+@media (max-width: 1100px){
+  .res-display-none{
+    display: none;
+  }
+  .display-none{
+    display: inline;
+  }
+  
+}
+@media (max-width: 900px){
+
+}
+@media (max-width: 655px){
+  .display-none-655{
+    display: block;
+  }
+  .header{
+    grid-template-columns: auto auto;
+  }
+  .navbar-nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    padding: 30px 100px;
+    gap: 50px;
+    font-size: 30px;
+    border-radius: 7px;
+    background-color: #808080f3;
+    box-shadow: 0 0 30px gray;
+    /* display: none; */
+  }
+  .close-btn{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+  }
+}

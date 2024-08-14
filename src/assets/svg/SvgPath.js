@@ -2,7 +2,8 @@ const SvgPath = {
     searchIcon : require("./search-icon.svg").default,
     shopIcon : require("./shop-icon.svg").default,
     heart : require("./heart.svg").default,
-
+    menu: require("./menu.svg").default,
+    close: require("./close-btn.svg").default,
     rightArrow : require("./right-arrow.svg").default,
 
     phone : require("./Phone.svg").default,
