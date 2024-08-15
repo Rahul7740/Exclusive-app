@@ -37,4 +37,14 @@
         align-items: center;
         text-align: center;
     }
+    .color-white-48px{
+        font-size: 28px;
+        color: white;
+    }
+    .product-promotion-container{
+        padding: 20px;
+    }
+    .promtion-img{
+        padding: 20px 5px;
+    }
 }

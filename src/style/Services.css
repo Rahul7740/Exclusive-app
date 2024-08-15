@@ -29,5 +29,6 @@
 @media (max-width:655px){
     .services-main-container{
         flex-direction: column;
+        text-align: center;
     }
 }

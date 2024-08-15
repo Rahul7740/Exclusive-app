@@ -61,6 +61,9 @@ const SvgPath = {
     banks: require('./banks.svg').default,
 
     profile: require('./profile.svg').default,
+
+    freeDelivery: require('./free-delivery.svg').default,
+    return : require('./return.svg').default,
 }
 
 export default SvgPath

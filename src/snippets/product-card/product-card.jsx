@@ -1,22 +1,41 @@
+import { Link } from "react-router-dom";
 import SvgPath from "../../assets/svg/SvgPath";
 
 const ProductCard = (props) => {
   return (
     <div className="card-wrapper">
-      <div className="card-image-container">
-        <img className="card-img"  src={require(`../../assets/images/${props.image}`)} alt={props.head} />
-        <div className="add-to-cart">Add To Cart</div>
-        <div className="like-Eye-container">
-          <img className="card-like-btn" src={SvgPath.heartWhiteBG} alt="likeBtn" />
-          <img className="card-eye-btn" src={SvgPath.eyeWithBG} alt="eye-btn" />
+      <Link to={"/productDetail"}>
+        <div className="card-image-container">
+          <img
+            className="card-img"
+            src={require(`../../assets/images/${props.image}`)}
+            alt={props.head}
+          />
+          <div className="add-to-cart">Add To Cart</div>
+          <div className="like-Eye-container">
+            <img
+              className="card-like-btn"
+              src={SvgPath.heartWhiteBG}
+              alt="likeBtn"
+            />
+            <img
+              className="card-eye-btn"
+              src={SvgPath.eyeWithBG}
+              alt="eye-btn"
+            />
+          </div>
+          {props.percentOFF < 1000 ? (
+            <p className="card-percentOFF ">{props.percentOFF}%</p>
+          ) : props.percentOFF === "NEW" ? (
+            <p className="card-percentOFF card-percentNew">
+              {props.percentOFF}
+            </p>
+          ) : (
+            ""
+          )}
         </div>
-        {props.percentOFF < 1000 ? (
-            <p  className="card-percentOFF ">{props.percentOFF}%</p>
-          ) : 
-            props.percentOFF === "NEW" ? <p  className="card-percentOFF card-percentNew">{props.percentOFF}</p> : ""
+      </Link>
 
-           }
-      </div>
       <div className="card-info">
         <h4 className="card-head">{props.head}</h4>
         <h4 className="card-price">{props.price}</h4>

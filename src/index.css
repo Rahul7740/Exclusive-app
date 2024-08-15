@@ -156,6 +156,10 @@ body {
   .all-projects{
     grid-template-columns: 1fr 1fr;
   }
+  .all-buttons {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
 
 
@@ -170,11 +174,15 @@ body {
     padding: 35px 0;
   }
   .overview-h1{
-    font-size: 18px;
+    font-size: 14px;
   }
   
   .all-projects{
     grid-template-columns: 1fr;
+  }
+  .all-buttons {
+    padding: 8px 15px;
+    font-size: 12px;
   }
 
 }

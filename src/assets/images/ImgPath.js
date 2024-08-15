@@ -47,5 +47,11 @@ const ImgPath = {
     aboutMamber3 : require('./about-member-3.png'),
 
     signUp : require('./sign-up-img.png'),
+
+    gamepadMain: require('./gameped-main.png'),
+    gamepad1: require('./gameped1.png'),
+    gamepad2: require('./gameped2.png'),
+    gamepad3: require('./gameped3.png'),
+    gamepad4: require('./gameped4.png'),
 }
 export default ImgPath
