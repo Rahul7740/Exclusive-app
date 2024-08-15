@@ -125,11 +125,7 @@
   }
 
 
-  .flex-spaceBetween{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+ 
   .apple-logo-container{
     display: flex;
     align-items: end;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import "../style/header.css";
 import SvgPath from "../assets/svg/SvgPath";
@@ -65,9 +65,12 @@ function Header() {
                 <button>
                   <img src={SvgPath.heart} />
                 </button>
-                <button>
+                <Link to={"/cart"}>
                   <img src={SvgPath.shopIcon} />
-                </button>
+                </Link>
+                <Link to={"/profile"}>
+                  <img src={SvgPath.profile} />
+                </Link>
                 <button onClick={()=>{setMenu(true)}} className="display-none-to-block-655">
                   <img src={SvgPath.menu} />
                 </button>

@@ -1,0 +1,97 @@
+.checkOut-container{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 15px;
+}
+.yourDetails{
+    max-width: 470px ;
+    width: 100%;
+}
+.details-sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 6px;
+    margin: 32px 0;
+}
+.details-sections label{
+    color: #999999;
+    font-size: 16px;
+}
+.details-sections input{
+    width: 100%;
+    background-color: #dddcdc;
+    padding: 17px 10px;
+    border-radius: 4px;
+
+}
+.save-your-details{
+    display: flex;
+    align-items: center;
+    gap:16px ;
+}
+.save-your-details input{
+    width: 24px;
+    height: 24px;
+}
+.save-your-details input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #000;
+    background-color: white;
+    cursor: pointer;
+}
+
+.save-your-details input[type="checkbox"]:checked {
+    background-color: #DB4444;
+    border-color: #DB4444;
+}
+
+.save-your-details input[type="checkbox"]:checked::before {
+    content: '✔';
+    display: block;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+
+.detianls-payment-method{
+    margin-top: 50px;
+    max-width: 527px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.cart-devices{
+    margin-bottom: 16px;
+}
+.select-method-div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.banks{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width:750px){
+    .checkOut-container{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .yourDetails{
+        
+        margin: 0 auto;
+    }    
+}

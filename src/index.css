@@ -63,6 +63,12 @@ body {
   display: inline-block;
   border-radius: 4px;
 }
+.flex-spaceBetween{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
 .viewAllBtn {
   margin-top: 70px;
   display: flex;

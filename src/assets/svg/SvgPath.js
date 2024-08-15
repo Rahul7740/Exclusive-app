@@ -54,6 +54,13 @@ const SvgPath = {
     statServices4: require('./stat-4-Services.svg').default,
 
     googleIcon : require('./Google-Icon.svg').default,
+
+    cartMoniter: require('./Monitor-Cart-Small.svg').default,
+    cartGamepad: require('./Gamepad-Cart-Small.svg').default,
+
+    banks: require('./banks.svg').default,
+
+    profile: require('./profile.svg').default,
 }
 
 export default SvgPath
