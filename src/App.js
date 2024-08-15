@@ -24,7 +24,7 @@ function App() {
           <Route path="/viewAllProducts" element={<ViewAllProducts />} />
           <Route path="/error" element={<Error />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </>
   );

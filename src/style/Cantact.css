@@ -85,8 +85,6 @@ body{
     margin: 5px 0;
 }
 
-
-@media (max-width:1100px){}
 @media (max-width:900px){
     .direction-container{
         margin-bottom: 40px;
@@ -99,5 +97,13 @@ body{
     .contact{
         max-width: 100%;
     }
+    .massage-inputs input{
+        font-size: 10px;
+    }
+    .massage-container textarea{
+        font-size: 10px;
+    }
+    .massage-container ::placeholder{
+        color: #DB4444;
+    }
 }
-@media (max-width:655px){}
