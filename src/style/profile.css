@@ -12,16 +12,20 @@
     flex-direction: column;
     gap: 16px;
 }
+.account-management h3{
+    font-size: 16px;
+}
 .account-management div{
-    margin-left: 35px;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 .account-management div p{
+    text-indent: 35px;
     cursor: pointer;
     color: gray;
     font-weight: 400;
+    font-size: 16px;
 }
 
 .edit-your-profile{
@@ -42,16 +46,44 @@
     justify-content: end;
     position: relative;
 }
+@media (max-width:1115px){
+    .edit-your-profile{
+        padding: 40px 20px;
+    }
+    .account-management div p{
+        text-indent: 10px;
+    }
+}
 
-@media(max-width:570px){
+@media (max-width:800px){
     .profile-container{
         flex-direction: column;
     }
+    
     .account-management{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
         margin: 0 auto;
+    }
+    .account-management div p{
+        text-indent: 0;
     }
     .edit-your-profile{
         margin: 0 auto;
         padding: 30px 20px;
+    }
+    .edit-your-profile h2{
+        font-size: 15px;
+    }
+    .profile-user-name{
+        font-size: 12px;
+    }
+    .account-management h3 {
+        font-size: 12px;
+    }
+    .account-management div p{
+        font-size: 12px;
     }
 }

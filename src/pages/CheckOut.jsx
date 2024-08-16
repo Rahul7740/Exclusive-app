@@ -17,37 +17,37 @@ function CheckOut() {
             <div className="yourDetails">
               <form>
                 <div className="details-sections">
-                  <label for="Your-name">Your Name*</label>
+                  <label htmlFor="Your-name">Your Name*</label>
                   <input id="Your-name" type="text" />
                 </div>
                 <div className="details-sections">
-                  <label for="company-Name">Company Name</label>
+                  <label htmlFor="company-Name">Company Name</label>
                   <input id="company-Name" type="text" />
                 </div>
                 <div className="details-sections">
-                  <label for="street-Address">Street Address*</label>
+                  <label htmlFor="street-Address">Street Address*</label>
                   <input id="street-Address" type="text" />
                 </div>
                 <div className="details-sections">
-                  <label for="apartment">
+                  <label htmlFor="apartment">
                     Apartment, floor, etc. (optional)
                   </label>
                   <input id="apartment" type="text" />
                 </div>
                 <div className="details-sections">
-                  <label for="city">Town/City*</label>
+                  <label htmlFor="city">Town/City*</label>
                   <input id="city" type="text" />
                 </div>
                 <div className="details-sections">
-                  <label for="number">Phone Number*</label>
+                  <label htmlFor="number">Phone Number*</label>
                   <input id="number" type="tel" />
                 </div>
                 <div className="details-sections">
-                  <label for="email">Email Address*</label>
+                  <label htmlFor="email">Email Address*</label>
                   <input id="email" type="email" />
                 </div>
                 <div className="save-your-details">
-                  <input type="checkbox" checked />
+                  <input type="checkbox"  />
                   <p>Save this information for faster check-out next time</p>
                 </div>
               </form>
@@ -83,14 +83,14 @@ function CheckOut() {
               </div>
               <div className="select-method-div">
                 <input id="bankss" type="radio" name="method" />
-                <label for="bankss" className="banks">
+                <label htmlFor="bankss" className="banks">
                   <p>Bank</p>
                   <img src={SvgPath.banks} alt="banks" />
                 </label>
               </div>
               <div className="select-method-div">
-                <input id="delivery" type="radio" name="method" checked />
-                <label for="delivery">Cash on delivery</label>
+                <input id="delivery" type="radio" name="method"  />
+                <label htmlFor="delivery">Cash on delivery</label>
               </div>
               <div className="flex-spaceBetween apply-coupon-container">
                 <input

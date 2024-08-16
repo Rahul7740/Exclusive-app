@@ -14,8 +14,6 @@ function Header() {
   }
   const [menu1 , setMenu] = useState(false)
   
-  console.log(menu1);
-  
   return (
     <>
       <header id="upScroll"  className="header-section">
@@ -45,6 +43,8 @@ function Header() {
 
             <div className="header-icons-container">
               <div className="display-block-none-1100">
+                <Link to={"/viewAllProducts"}>
+
                 <form className="search-conatiner display-none-black-1100">
                   <input
                     type="text"
@@ -56,12 +56,13 @@ function Header() {
                     <img src={SvgPath.searchIcon} alt="search" />
                   </button>
                 </form>
+                </Link>
               </div>
 
               <div className="shop-icon-container">
-                <button type="submit" className="display-none-block-1100 search-btn ">
+                <Link to={"/viewAllProducts"} type="submit" className="display-none-block-1100 search-btn ">
                   <img src={SvgPath.searchIcon} alt="search" />
-                </button>
+                </Link>
                 <button>
                   <img src={SvgPath.heart} />
                 </button>

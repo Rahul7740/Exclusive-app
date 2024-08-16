@@ -16,14 +16,15 @@ function Profile() {
           </div>
           <div className="profile-container">
             <div className="account-management">
-              <h3>Manage My Account</h3>
+              
               <div>
+              <h3>Manage My Account</h3>
                 <p style={{ color: "#DB4444" }}>My Profile</p>
                 <p>Address Book</p>
                 <p>My Payment Options</p>
               </div>
-              <h3>My Orders</h3>
               <div>
+              <h3>My Orders</h3>
                 <p>My Returns</p>
                 <p>My Cancellations</p>
               </div>
@@ -33,23 +34,27 @@ function Profile() {
               <h2>Edit Your Profile</h2>
               <form>
                 <div className="details-sections">
-                  <label for="first-name">First Name</label>
-                  <input id="first-name" type="text" value="Md" />
+                  <label htmlFor={"first-name"}>First Name</label>
+                  <input id="first-name" type="text" defaultValue="Md" />
                 </div>
                 <div className="details-sections">
-                  <label for="last-name">Last Name</label>
-                  <input id="last-name" type="text" value="Rimel" />
+                  <label htmlFor={"last-name"}>Last Name</label>
+                  <input id="last-name" type="text" defaultValue="Rimel" />
                 </div>
                 <div className="details-sections">
-                  <label for="email">Email</label>
-                  <input id="email" type="text" value="rimel1111@gmail.com" />
+                  <label htmlFor={"email"}>Email</label>
+                  <input
+                    id="email"
+                    type="text"
+                    defaultValue="rimel1111@gmail.com"
+                  />
                 </div>
                 <div className="details-sections">
-                  <label for="Address">Address</label>
+                  <label htmlFor={"Address"}>Address</label>
                   <input
                     id="Address"
                     type="text"
-                    value="Kingston, 5236, United State"
+                    defaultValue="Kingston, 5236, United State"
                   />
                 </div>
                 <div>
@@ -65,8 +70,8 @@ function Profile() {
                   </div>
                 </div>
                 <div className="cencal-and-save">
-                    <button>Cencel</button>
-                    <Button name="Save Changes" bgColor="#db4444" ></Button>
+                  <button>Cencel</button>
+                  <Button name="Save Changes" bgColor="#db4444"></Button>
                 </div>
               </form>
             </div>

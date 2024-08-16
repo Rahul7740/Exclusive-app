@@ -24,7 +24,7 @@ function Cart() {
                   <p>LCD Monitor</p>
                 </div>
                 <p>$650</p>
-                <input type="number" value="01" />
+                <input type="number" defaultValue="01" />
                 <p>$650</p>
               </div>
               <div className="cart-p-contents">
@@ -33,7 +33,7 @@ function Cart() {
                   <p>H1 Gamepad</p>
                 </div>
                 <p>$550</p>
-                <input type="number" value="02" />
+                <input type="number" defaultValue="02" />
                 <p>$1100</p>
               </div>
             </div>

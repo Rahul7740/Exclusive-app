@@ -24,10 +24,10 @@ import phones from "../json/iphones.json";
 function Banner() {
   // const { theme, modebtn } = useTheme();
 
-  const [slide,setSlide] = useState(false)
+  const [slide, setSlide] = useState(false);
 
-  function changeSlide(){
-    setSlide(slide === false ? true : false)
+  function changeSlide() {
+    setSlide(slide === false ? true : false);
   }
 
   return (
@@ -37,8 +37,15 @@ function Banner() {
         {/* <h1>{theme}</h1> */}
         <div className="container">
           <div className="sliderbar-AND-banner-DIV ">
-            <nav className={`sidebar ${slide === true && "slidebar-transform"}`}>
-              <button onClick={changeSlide} className="slidbar-show-hide display-none-block-1100"><img src={SvgPath.rightArrow} alt="" /></button>
+            <nav
+              className={`sidebar ${slide === true && "slidebar-transform"}`}
+            >
+              <button
+                onClick={changeSlide}
+                className="slidbar-show-hide display-none-block-1100"
+              >
+                <img src={SvgPath.rightArrow} alt="" />
+              </button>
               <ul>
                 {links.map((item, index) => (
                   <li className="flex-spaceBetween" key={index}>

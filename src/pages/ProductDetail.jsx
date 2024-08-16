@@ -26,7 +26,7 @@ function ProductDetail() {
                         <img className="product-main-img" src={ImgPath.gamepadMain} />
                         <div className="product-imformation">
                             <h2>Havic HV G-92 Gamepad</h2>
-                            <div className="flex">
+                            <div className="ratting-container">
                                 <div className="card-rating">
                                     <img src={SvgPath.star} alt="star" />
                                     <img src={SvgPath.star} alt="star" />
@@ -57,23 +57,23 @@ function ProductDetail() {
                             </div>
                             <div className="radio-container">
                                 <p>Size:</p>
-                                <label for="a1" className="custom-radio">
+                                <label htmlFor="a1" className="custom-radio">
                                     <input id="a1" type="radio" name="size" />
                                     <span className="size-btn" >XS</span>
                                 </label>
-                                <label for="a2" className="custom-radio">
+                                <label htmlFor="a2" className="custom-radio">
                                     <input id="a2" type="radio" name="size" />
                                     <span className="size-btn">S</span>
                                 </label>
-                                <label for="a3" className="custom-radio">
+                                <label htmlFor="a3" className="custom-radio">
                                     <input id="a3" type="radio" name="size" />
                                     <span className="size-btn">M</span>
                                 </label>
-                                <label for="a4" className="custom-radio">
+                                <label htmlFor="a4" className="custom-radio">
                                     <input id="a4" type="radio" name="size" />
                                     <span className="size-btn">L</span>
                                 </label>
-                                <label for="a5" className="custom-radio">
+                                <label htmlFor="a5" className="custom-radio">
                                     <input id="a5" type="radio" name="size" />
                                     <span className="size-btn">XL</span>
                                 </label>
@@ -99,7 +99,7 @@ function ProductDetail() {
                                     <img src={SvgPath.return} />
                                     <div>
                                         <h3>Return Delivery</h3>
-                                        <a>Free 30 Days Delivery Returns. <ins>?Details</ins> </a>
+                                        <a href="">Free 30 Days Delivery Returns. <ins>?Details</ins> </a>
 
                                     </div>
                                 </div>
