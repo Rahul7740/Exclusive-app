@@ -83,6 +83,7 @@
         width: 40px;
     }
     .cart-p-contents{
+        padding: 10px 5px;
         gap: 10px;
     }
     .cart-total-container{
